@@ -1,0 +1,19 @@
+.caroussel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.caroussel img{
+    width: 100px;
+    @keyframes defilementInfinie {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+animation: defilementInfinie 15s linear infinite;
+}
